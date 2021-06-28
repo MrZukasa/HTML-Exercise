@@ -1,0 +1,85 @@
+body {
+    background-color: lightblue;
+  }
+p {
+    background-color: rgba(197, 143, 143, 0.733);
+}
+.prova {
+    color: red;         /*esempio di specificità*/
+}
+h1 {
+    color: blue;
+}
+/*h1 {
+    all: unset;     rimuove tutto il set di regole
+}*/
+h1, h2, h3 {
+    color: blue;
+}
+span {
+    color: green;
+}
+/* link non visitato */
+a:link {
+    color: blue;
+}
+  
+  /* link visitato */
+ a:visited {
+    color: purple;
+}
+  
+  /* Passaggio del mouse */
+a:hover {
+    color: green;
+}
+  
+  /* Link selezionato */
+a:active {
+    color: red;
+}
+.box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px red;
+    /*margin: 20px 30px 20px 10px;  una misura per ogni margine in questo ordine: top, right, bottom, left */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: #fffee0;
+    border: solid 2px red;
+}
+.bg-color {
+    background-color: salmon;
+}
+.bg-gradiente {
+    background-image: linear-gradient(115deg, rgba(0,249,255,1) 39%, rgba(51,57,56,1)96%);
+}
+/* cerchio :O */
+.cerchio {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.forma {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 1px;
+}
+input[type="text"],
+input[type="email"]{
+    border: solid 2px #000;
+    padding: 10px;
+}
+input[type="submit"]{
+    background-color: blue;
+    padding: 10px;
+    font-size: 16px;
+}
